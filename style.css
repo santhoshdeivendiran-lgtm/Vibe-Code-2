@@ -1,0 +1,261 @@
+/* ==========================================================================
+   Spice & Spoon - Master Stylesheet
+   Modern, elegant restaurant design system
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-dark: #14110E;
+  --bg-dark-secondary: #1A1612;
+  --bg-dark-card: #221D17;
+  --bg-dark-elevated: #2A231C;
+  
+  --bg-cream: #FBF8F4;
+  --bg-cream-soft: #F5EFE6;
+  --bg-cream-card: #FFFFFF;
+  
+  --accent-gold: #E58925;
+  --accent-gold-hover: #CF7615;
+  --accent-gold-glow: rgba(229, 137, 37, 0.25);
+  --accent-gold-light: #FFF6EB;
+  --accent-gold-border: rgba(229, 137, 37, 0.35);
+
+  --text-white: #FFFFFF;
+  --text-cream: #F3EFEA;
+  --text-muted-dark: #A69E96;
+  
+  --text-dark: #1E1B18;
+  --text-dark-secondary: #4A443F;
+  --text-muted-light: #7A7269;
+
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --border-light: rgba(0, 0, 0, 0.08);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 8px 24px rgba(229, 137, 37, 0.3);
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  --container-max: 1200px;
+}
+
+/* Reset & Base Setup */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: var(--bg-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 90px 0;
+  position: relative;
+}
+
+.section-cream {
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+.section-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+}
+
+.section-dark-secondary {
+  background-color: var(--bg-dark-secondary);
+  color: var(--text-white);
+}
+
+/* Typography Helpers */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 52px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted-light);
+  line-height: 1.6;
+}
+
+.section-dark .section-subtitle {
+  color: var(--text-muted-dark);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--accent-gold);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(229, 137, 37, 0.35);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-gold-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-white);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secondary:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background-color: rgba(229, 137, 37, 0.08);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 1.5px solid var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--accent-gold);
+  color: #FFFFFF;
+}
+
+/* Page Hero Banner (For About, Menu, Gallery, Contact) */
+.page-banner {
+  position: relative;
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 50% 30%, rgba(229, 137, 37, 0.15), transparent 70%),
+    linear-gradient(to bottom, rgba(20, 17, 14, 0.8), rgba(20, 17, 14, 0.95)),
+    url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0 70px;
+  text-align: center;
+  color: var(--text-white);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.page-banner-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.page-banner-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text-muted-dark);
+}
+
+.page-banner-breadcrumb a {
+  color: var(--text-cream);
+}
+
+.page-banner-breadcrumb a:hover {
+  color: var(--accent-gold);
+}
+
+.page-banner-breadcrumb span {
+  color: var(--accent-gold);
+}

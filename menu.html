@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu | Spice & Spoon</title>
+  <meta name="description" content="Explore the diverse menu of Spice & Spoon: authentic starters, rich main courses, handcrafted desserts, and refreshing beverages.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="brand-logo" id="brand-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="currentColor"/>
+            <path d="M12 9C12.5 7.5 14 5.5 16 4C18 5.5 19.5 7.5 20 9" stroke="#14110E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Spice & Spoon</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link active">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <button type="button" class="nav-cta-btn" data-action="book-table">Book a Table</button>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="brand-logo" style="margin-bottom: 30px;">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px;">
+          <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="#E58925"/>
+        </svg>
+        <span>Spice & Spoon</span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="menu.html" class="mobile-nav-link active">Menu</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary" data-action="book-table" style="width: 100%;">Book a Table</button>
+      <p style="font-size: 0.8rem; color: #7A7269; text-align: center;">+91 98765 43210</p>
+    </div>
+  </aside>
+
+  <!-- ==================== Page Banner ==================== -->
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">Our Menu</h1>
+      <nav class="page-banner-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&gt;</span>
+        <span>Menu</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ==================== Main Content ==================== -->
+  <main class="section section-cream">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-filter-bar">
+        <button type="button" class="menu-filter-btn active" data-filter="all">All</button>
+        <button type="button" class="menu-filter-btn" data-filter="starters">Starters</button>
+        <button type="button" class="menu-filter-btn" data-filter="main">Main Course</button>
+        <button type="button" class="menu-filter-btn" data-filter="desserts">Desserts</button>
+        <button type="button" class="menu-filter-btn" data-filter="beverages">Beverages</button>
+      </div>
+
+      <!-- ================= 1. STARTERS ================= -->
+      <div class="menu-category-block" data-category="starters">
+        <h2 class="menu-category-title">Starters</h2>
+        <p class="menu-category-sub">Small bites. Big flavours.</p>
+
+        <div class="menu-grid">
+          <!-- Item 1: Chicken Spring Rolls -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" 
+                alt="Crispy golden Chicken Spring Rolls"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Chicken Spring Rolls</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Crispy wonton wrappers loaded with seasoned minced chicken.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹180</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Paneer Tikka -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=600&q=80" 
+                alt="Clay oven roasted spicy Paneer Tikka"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Paneer Tikka</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Char-grilled cottage cheese cubes infused with aromatic tandoori masala.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹200</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Veg Manchurian -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80" 
+                alt="Saucy savory Veg Manchurian balls"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Veg Manchurian</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Golden vegetable fritters tossed in savory garlic soy sauce.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹160</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Garlic Bread -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?auto=format&fit=crop&w=600&q=80" 
+                alt="Toasted artisan Garlic Bread with herbs"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Garlic Bread</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Warm freshly toasted baguettes brushed with roasted garlic butter and oregano.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹120</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 2. MAIN COURSE ================= -->
+      <div class="menu-category-block" data-category="main">
+        <h2 class="menu-category-title">Main Course</h2>
+        <p class="menu-category-sub">Hearty meals for every craving.</p>
+
+        <div class="menu-grid">
+          <!-- Item 1: Chicken Biryani -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80" 
+                alt="Fragrant Dum Chicken Biryani"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Chicken Biryani</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Slow-cooked dum basmati rice layered with succulent spiced chicken.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹250</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Paneer Butter Masala -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=600&q=80" 
+                alt="Creamy Paneer Butter Masala curry"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Paneer Butter Masala</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Silky cottage cheese in a rich tomato, butter, and cashew gravy.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹220</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Tandoori Chicken -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80" 
+                alt="Smoky grilled Tandoori Chicken"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Tandoori Chicken</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Traditional clay-roasted chicken marinated with Kashmiri spices and yogurt.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹280</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Veg Fried Rice -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80" 
+                alt="Wok tossed Veg Fried Rice"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Veg Fried Rice</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Wok-tossed jasmine rice with crisp seasonal vegetables and scallions.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹180</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 3. DESSERTS ================= -->
+      <div class="menu-category-block" data-category="desserts">
+        <h2 class="menu-category-title">Desserts</h2>
+        <p class="menu-category-sub">Sweet endings. Perfectly satisfying.</p>
+
+        <div class="menu-grid">
+          <!-- Item 1: Chocolate Lava Cake -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80" 
+                alt="Molten Chocolate Lava Cake"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Chocolate Lava Cake</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Warm molten center dark chocolate cake with powdered sugar.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹120</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Gulab Jamun -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=600&q=80" 
+                alt="Sweet hot Gulab Jamun in saffron syrup"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Gulab Jamun</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Golden fried milk solids soaked in warm cardamom and rose water syrup.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹100</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Ice Cream -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=600&q=80" 
+                alt="Artisanal Vanilla and Butterscotch Ice Cream"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Ice Cream</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Two scoops of creamy artisanal gelato with crunchy praline nuts.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹90</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Fruit Salad -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1568158879083-c42860933ed7?auto=format&fit=crop&w=600&q=80" 
+                alt="Fresh bowl of diced seasonal fruits"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Fruit Salad</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Freshly diced seasonal fruits drizzled with honey lime dressing.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹80</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 4. BEVERAGES ================= -->
+      <div class="menu-category-block" data-category="beverages">
+        <h2 class="menu-category-title">Beverages</h2>
+        <p class="menu-category-sub">Refreshing sips to complement your meal.</p>
+
+        <div class="menu-grid">
+          <!-- Item 1: Mango Lassi -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" 
+                alt="Creamy Alphonso Mango Lassi"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Mango Lassi</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Thick creamy yogurt blended with sweet Alphonso mango pulp.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹90</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Fresh Mint Mojito -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" 
+                alt="Iced Lemon Mint Soda"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Virgin Mint Mojito</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Zesty lime, muddled garden mint, cane sugar, and sparkling soda.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹110</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Masala Chai -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" 
+                alt="Traditional Indian Masala Chai"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Royal Masala Chai</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Freshly brewed tea with crushed ginger, cardamom, cloves, and milk.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹50</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Cold Coffee with Ice Cream -->
+          <div class="menu-card">
+            <div class="menu-card-img-wrap">
+              <img 
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=80" 
+                alt="Iced Cold Coffee with Chocolate Drizzle"
+                class="menu-card-img"
+                loading="lazy"
+              >
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-header">
+                <h3 class="menu-card-name">Frosted Cold Coffee</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted-light);">Rich espresso blended with milk and crowned with vanilla ice cream.</p>
+              </div>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">₹120</span>
+                <button type="button" class="menu-order-btn" data-action="book-table">Order</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px;">
+            <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="#E58925"/>
+          </svg>
+          <span>Spice & Spoon</span>
+        </a>
+
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="menu.html" class="footer-link">Menu</a>
+          <a href="gallery.html" class="footer-link">Gallery</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+
+        <div class="footer-socials">
+          <a href="#" class="social-icon-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#14110E"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spice & Spoon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== Reservation Modal ==================== -->
+  <div class="modal-backdrop" id="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title">Book a Table</h3>
+        <p>Reserve your dining experience at Spice & Spoon</p>
+        <button type="button" class="modal-close-btn" aria-label="Close booking modal">✕</button>
+      </div>
+      <form class="modal-body" id="reservation-form">
+        <div class="form-group">
+          <label class="form-label" for="res-name">Full Name *</label>
+          <input type="text" id="res-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="res-phone">Phone Number *</label>
+          <input type="tel" id="res-phone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="res-date">Date *</label>
+            <input type="date" id="res-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="res-time">Time *</label>
+            <select id="res-time" class="form-control" required>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="07:30 PM" selected>07:30 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="res-guests">Number of Guests</label>
+          <select id="res-guests" class="form-control">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Persons</option>
+            <option value="4">4 Persons</option>
+            <option value="6">6+ Persons</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

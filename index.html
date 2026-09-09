@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice & Spoon | Authentic Taste & Warm Ambience</title>
+  <meta name="description" content="Experience the authentic flavor of handcrafted spices and fresh ingredients at Spice & Spoon. Book a table or explore our curated menu today.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ==================== Header ==================== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" id="brand-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="currentColor"/>
+            <path d="M12 9C12.5 7.5 14 5.5 16 4C18 5.5 19.5 7.5 20 9" stroke="#14110E" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span>Spice & Spoon</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Action Button -->
+        <button type="button" class="nav-cta-btn" data-action="book-table" id="nav-book-btn">Book a Table</button>
+
+        <!-- Mobile Toggle Hamburger -->
+        <button class="nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay & Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="brand-logo" style="margin-bottom: 30px;">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 28px; height: 28px;">
+          <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="#E58925"/>
+        </svg>
+        <span>Spice & Spoon</span>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About</a></li>
+        <li><a href="menu.html" class="mobile-nav-link">Menu</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mobile-nav-footer">
+      <button type="button" class="btn btn-primary" data-action="book-table" style="width: 100%;">Book a Table</button>
+      <p style="font-size: 0.8rem; color: #7A7269; text-align: center;">+91 98765 43210</p>
+    </div>
+  </aside>
+
+  <!-- ==================== Main Content ==================== -->
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Hero Content -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              Good Food <span>|</span> Great Mood
+            </div>
+            <h1 class="hero-title">
+              Taste the<br>
+              <span class="highlight">True Flavour</span>
+            </h1>
+            <p class="hero-description">
+              Fresh ingredients, authentic recipes and a cozy atmosphere — that's what we serve at Spice & Spoon.
+            </p>
+            <div class="hero-actions">
+              <a href="menu.html" class="btn btn-primary" id="hero-explore-btn">Explore Menu</a>
+              <button type="button" class="btn btn-secondary" data-action="book-table" id="hero-book-btn">Book a Table</button>
+            </div>
+          </div>
+
+          <!-- Right Hero Image -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <img 
+              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80" 
+              alt="Authentic Royal Spiced Biryani at Spice & Spoon" 
+              class="hero-dish-img"
+              loading="eager"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#specialties" class="hero-scroll-indicator" aria-label="Scroll to Specialties">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- 2. Specialties Section -->
+    <section class="section section-cream" id="specialties">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Specialties</h2>
+          <p class="section-subtitle">
+            From traditional favorites to modern delights, we bring you the best flavors in every bite.
+          </p>
+        </div>
+
+        <div class="specialties-grid">
+          <!-- Feature 1: Fresh Ingredients -->
+          <div class="specialty-card">
+            <div class="specialty-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L9.5 8.5L3 9.5L8 14.5L6.5 21L12 17.5L17.5 21L16 14.5L21 9.5L14.5 8.5L12 2Z"></path>
+              </svg>
+            </div>
+            <h3 class="specialty-title">Fresh Ingredients</h3>
+            <p class="specialty-desc">Only the best, always.</p>
+          </div>
+
+          <!-- Feature 2: Authentic Recipes -->
+          <div class="specialty-card">
+            <div class="specialty-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="specialty-title">Authentic Recipes</h3>
+            <p class="specialty-desc">Traditional taste, modern touch.</p>
+          </div>
+
+          <!-- Feature 3: Cozy Ambience -->
+          <div class="specialty-card">
+            <div class="specialty-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="specialty-title">Cozy Ambience</h3>
+            <p class="specialty-desc">Perfect for family & friends.</p>
+          </div>
+
+          <!-- Feature 4: Great Service -->
+          <div class="specialty-card">
+            <div class="specialty-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="specialty-title">Great Service</h3>
+            <p class="specialty-desc">Your comfort is our priority.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Mid-Banner Section -->
+    <section class="promo-banner">
+      <div class="container">
+        <h2 class="promo-title">Good Food Brings People Together</h2>
+        <a href="menu.html" class="btn btn-primary" id="banner-view-menu-btn">View Menu</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== Footer ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 26px; height: 26px;">
+            <path d="M16 2C13.5 6 10 9 10 13C10 16.5 12.5 19 15 19.8V28C15 28.6 15.4 29 16 29C16.6 29 17 28.6 17 28V19.8C19.5 19 22 16.5 22 13C22 9 18.5 6 16 2Z" fill="#E58925"/>
+          </svg>
+          <span>Spice & Spoon</span>
+        </a>
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="menu.html" class="footer-link">Menu</a>
+          <a href="gallery.html" class="footer-link">Gallery</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-socials">
+          <a href="#" class="social-icon-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#14110E"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spice & Spoon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== Reservation Modal ==================== -->
+  <div class="modal-backdrop" id="reservation-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-title">Book a Table</h3>
+        <p>Reserve your dining experience at Spice & Spoon</p>
+        <button type="button" class="modal-close-btn" aria-label="Close booking modal">✕</button>
+      </div>
+      <form class="modal-body" id="reservation-form">
+        <div class="form-group">
+          <label class="form-label" for="res-name">Full Name *</label>
+          <input type="text" id="res-name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="res-phone">Phone Number *</label>
+          <input type="tel" id="res-phone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="res-date">Date *</label>
+            <input type="date" id="res-date" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="res-time">Time *</label>
+            <select id="res-time" class="form-control" required>
+              <option value="12:30 PM">12:30 PM</option>
+              <option value="01:30 PM">01:30 PM</option>
+              <option value="07:30 PM" selected>07:30 PM</option>
+              <option value="08:30 PM">08:30 PM</option>
+              <option value="09:30 PM">09:30 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="res-guests">Number of Guests</label>
+          <select id="res-guests" class="form-control">
+            <option value="1">1 Person</option>
+            <option value="2" selected>2 Persons</option>
+            <option value="4">4 Persons</option>
+            <option value="6">6+ Persons</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="res-note">Special Requests (Optional)</label>
+          <input type="text" id="res-note" class="form-control" placeholder="Birthday celebration, quiet table, etc.">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 12px;">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
